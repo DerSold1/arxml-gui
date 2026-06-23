@@ -54,7 +54,9 @@ class ARXMLGenerator:
         """Add AUTOSAR metadata"""
         metadata = SubElement(root, "AR-INFO-SECTION")
         desc = SubElement(metadata, "DESCRIPTION")
-        SubElement(desc, "L-2 L="en"").text = f"{collection.project_name} - {collection.vendor_name}"
+        l2_elem = SubElement(desc, "L-2")
+        l2_elem.set("L", "en")
+        l2_elem.text = f"{collection.project_name} - {collection.vendor_name}"
 
     def _add_service_interface(self, parent: Element, interface: InterfaceElement) -> None:
         """Add service interface to ARXML"""
