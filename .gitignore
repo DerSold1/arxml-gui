@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project files
+*.arxml
+*.arxml.bak
+projects/
+exports/
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.local
